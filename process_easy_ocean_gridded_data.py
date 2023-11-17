@@ -343,8 +343,13 @@ def create_section_metadata(
     metadata["section_start_date"] = section_time_boundaries[0]
     metadata["section_end_date"] = section_time_boundaries[1]
 
-    print(f"start date {section_time_boundaries[0]}")
-    print(f"end date {section_time_boundaries[1]}")
+    start_year = section_time_boundaries[0].split("-")[0]
+    end_year = section_time_boundaries[1].split("-")[0]
+
+    if start_year != end_year:
+        print(
+            f"section from {section_time_boundaries[0]} to  {section_time_boundaries[1]}"
+        )
 
     # metadata['timestamp_boundaries'] = get_iso_timestamp_boundaries(section_index, sections_lat_lon_metadata)
 
@@ -920,27 +925,27 @@ def main():
     # woce_lines = ['A03']
 
     # varyling lon
-    woce_lines = ["P01"]  # varying lon
-    woce_lines = ["P09"]  # varyling lat
+    # woce_lines = ["P01"]  # varying lon
+    # woce_lines = ["P09"]  # varyling lat
 
-    woce_lines = [
-        "P01",
-        "P02",
-        "P03",
-        "P04",
-        "P06",
-        "P09",
-        "P10",
-        "P11",
-        "P13",
-        "P14",
-        "P15",
-        "P16",
-        "P17",
-        "P17E",
-        "P18",
-        "P21",
-    ]
+    # woce_lines = [
+    #     "P01",
+    #     "P02",
+    #     "P03",
+    #     "P04",
+    #     "P06",
+    #     "P09",
+    #     "P10",
+    #     "P11",
+    #     "P13",
+    #     "P14",
+    #     "P15",
+    #     "P16",
+    #     "P17",
+    #     "P17E",
+    #     "P18",
+    #     "P21",
+    # ]
 
     # TODO
     # NaN in json instead of null

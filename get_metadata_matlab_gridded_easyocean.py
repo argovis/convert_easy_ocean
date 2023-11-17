@@ -430,38 +430,38 @@ def create_metadata(ll_grid_direction, easy_file):
 
 # Start processing files (using Matlab data)
 def get_all_metadata_from_matlab_files(mat_files):
-    woce_line_lat_lon_variations_file = (
-        "../easyocean_lat_lon_tracks/easyocean_woce_tracks_latlon_dir.csv"
-    )
+    # woce_line_lat_lon_variations_file = (
+    #     "../easyocean_lat_lon_tracks/easyocean_woce_tracks_latlon_dir.csv"
+    # )
+
+    woce_line_lat_lon_variations_file = "easyocean_woce_tracks_latlon_dir.csv"
 
     df_woce_lines = pd.read_csv(woce_line_lat_lon_variations_file)
 
     woce_lines = df_woce_lines["woce_line"].values
 
-    # woce_lines = ['A12']
+    # woce_lines = ["P01"]  # varying lon direction
 
-    woce_lines = ["P01"]  # varying lon direction
+    # woce_lines = ["P09"]  # varyling lat
 
-    woce_lines = ["P09"]  # varyling lat
-
-    woce_lines = [
-        "P01",
-        "P02",
-        "P03",
-        "P04",
-        "P06",
-        "P09",
-        "P10",
-        "P11",
-        "P13",
-        "P14",
-        "P15",
-        "P16",
-        "P17",
-        "P17E",
-        "P18",
-        "P21",
-    ]
+    # woce_lines = [
+    #     "P01",
+    #     "P02",
+    #     "P03",
+    #     "P04",
+    #     "P06",
+    #     "P09",
+    #     "P10",
+    #     "P11",
+    #     "P13",
+    #     "P14",
+    #     "P15",
+    #     "P16",
+    #     "P17",
+    #     "P17E",
+    #     "P18",
+    #     "P21",
+    # ]
 
     count = 0
 

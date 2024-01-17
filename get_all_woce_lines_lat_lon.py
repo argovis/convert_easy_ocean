@@ -61,7 +61,7 @@ def main():
     ) = scrape_easyocean_html_for_files()
 
     woce_line_lat_lon_variations_file = (
-        "../easyocean_lat_lon_tracks/easyocean_woce_tracks_latlon_dir.csv"
+        "easyocean_woce_tracks_latlon_dir.csv"
     )
 
     df_woce_lines = pd.read_csv(woce_line_lat_lon_variations_file)

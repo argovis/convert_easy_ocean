@@ -26,7 +26,7 @@ import json
 
 # easy_file = f'../easy_ocean_data/gridded/pacific/{line}/{file_name}'
 
-# woce_line_lat_lon_variations_file = '../easyocean_lat_lon_tracks/easyocean_woce_tracks_latlon_dir.csv'
+# woce_line_lat_lon_variations_file = 'easyocean_woce_tracks_latlon_dir.csv'
 
 # output_filename = f'../processed_data/metadata/{line}_metadata.json'
 
@@ -431,7 +431,7 @@ def create_metadata(ll_grid_direction, easy_file):
 # Start processing files (using Matlab data)
 def get_all_metadata_from_matlab_files(mat_files):
     # woce_line_lat_lon_variations_file = (
-    #     "../easyocean_lat_lon_tracks/easyocean_woce_tracks_latlon_dir.csv"
+    #     "easyocean_woce_tracks_latlon_dir.csv"
     # )
 
     woce_line_lat_lon_variations_file = "easyocean_woce_tracks_latlon_dir.csv"

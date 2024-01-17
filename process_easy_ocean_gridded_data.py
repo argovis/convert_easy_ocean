@@ -911,7 +911,7 @@ def main():
     # active_files_json = get_active_files_json()
 
     woce_line_lat_lon_variations_file = (
-        "../easyocean_lat_lon_tracks/easyocean_woce_tracks_latlon_dir.csv"
+        "easyocean_woce_tracks_latlon_dir.csv"
     )
 
     df_woce_lines = pd.read_csv(woce_line_lat_lon_variations_file)

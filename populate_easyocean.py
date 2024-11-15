@@ -47,7 +47,8 @@ for filename in metafiles:
 		m = {
 			'occupancies': [m[str(i)] for i in range(len(m))],
 			'_id': filename[0:-14],
-			'date_updated_argovis': datetime.datetime.now()
+			'date_updated_argovis': datetime.datetime.now(),
+			'data_type': 'easyocean'
 		}
 
 		for i in range(len(m['occupancies'])):
